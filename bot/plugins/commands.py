@@ -28,20 +28,20 @@ async def start(bot, update):
             await update.reply_cached_media(
                 file_id,
                 quote=True,
-                caption = f"<b>{file_name}</b>\n \n<b>┈••✿ @MOVIESWORLD52 ✿••┈</b>\n \n<b>➠𝐂ʜᴀɴɴᴇʟ : @MOVIESWORLD54</b>",
+                caption = f"<b>{file_name}</b>\n \n<b>┈••✿ @ADMOVEIAD ✿••┈</b>\n \n<b>➠𝐂hannil : @ADMOVEI</b>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    '⚠️ 𝙅𝙊𝙄𝙉', url="https://t.me/MOVIESWORLD52"
+                                    '⚠️ 𝙅𝙊𝙄𝙉', url="https://t.me/ADMOVEIAD"
                                 )
                         ],
                         [
                             InlineKeyboardButton
                                 (
-                                    '⚠️ 𝙅𝙊𝙄𝙉', url="https://t.me/MOVIESWORLD54"
+                                    '⚠️ 𝙅𝙊𝙄𝙉', url="https://t.me/ADMOVEI"
                                 )
                         ] 
                     ]
@@ -53,18 +53,20 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('🕵️‍♂️ 𝘾𝙍𝙀𝘼𝙏𝙊𝙍', url='https://t.me/darkz_angel'),
-        InlineKeyboardButton('⚠️ 𝙂𝙍𝙊𝙐𝙋', url ='https://t.me/MOVIESWORLD52')
+        InlineKeyboardButton('🕵️‍♂️ 𝘾𝙍𝙀𝘼𝙏𝙊𝙍', url='https://t.me/Lucifer_Devil_AD'),
+        InlineKeyboardButton('⚠️ 𝙂𝙍𝙊𝙐𝙋', url ='https://t.me/ADMOVEIAD')
+    ],[
+        InlineKeyboardButton('♻️ 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝙈𝘼𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ♻️', url='https://t.me/ADMOVEI')
     ],[
         InlineKeyboardButton('💡 𝙃𝙀𝙇𝙋', callback_data="help"),
         InlineKeyboardButton('🔐 𝘾𝙇𝙊𝙎𝙀', callback_data="close")
-    ]]
+       ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await bot.send_photo(
         chat_id=update.chat.id,
-        photo="https://telegra.ph/file/a6464a15604b867310f03.jpg",
+        photo="https://telegra.ph/file/912e99f6798a3d2b1df23.jpg",
         caption=Translation.START_TEXT.format(
                 update.from_user.first_name),
         reply_markup=reply_markup,
